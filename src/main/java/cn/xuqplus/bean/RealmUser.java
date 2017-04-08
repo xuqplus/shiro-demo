@@ -1,12 +1,32 @@
 package cn.xuqplus.bean;
 
+import java.util.List;
+
 /**
- * Created by Administrator on 2017-04-07.
+ * Created by Administrator on 2017-04-08.
  */
-public class User {
+public class RealmUser {
     private Long id;
     private String name;
     private String pwd;
+    private List role;
+    private List permission;
+
+    public void setRole(List role) {
+        this.role = role;
+    }
+
+    public void setPermission(List permission) {
+        this.permission = permission;
+    }
+
+    public List getRole() {
+        return role;
+    }
+
+    public List getPermission() {
+        return permission;
+    }
 
     public void setId(Long id) {
         this.id = id;
