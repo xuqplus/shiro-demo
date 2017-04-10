@@ -10,7 +10,12 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class BeanConfig {
     @Bean(value = "bb")
-    public User user() {
+    public User bb() {
+        return new User(22l, "bb", "bb");
+    }
+
+    @Bean(name = "aa")
+    public User aa() {
         return new User(11l, "aa", "aa");
     }
 }
