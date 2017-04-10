@@ -8,6 +8,12 @@ public class User {
     private String name;
     private String pwd;
 
+    public User(Long id, String name, String pwd) {
+        this.id = id;
+        this.name = name;
+        this.pwd = pwd;
+    }
+
     public void setId(Long id) {
         this.id = id;
     }
