@@ -17,8 +17,11 @@ import java.util.Set;
 public class MyAuthorizingRealm extends AuthorizingRealm {
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authenticationToken) throws AuthenticationException {
+        /**
+         * subject.login(token)中的token需要和这里的一致
+         * ,才能登录成功
+         */
         AuthenticationInfo info = new SimpleAuthenticationInfo("xqq", "123", getName());
-//        return null;
         return info;
     }
 
@@ -45,7 +48,6 @@ public class MyAuthorizingRealm extends AuthorizingRealm {
         strings.add("admin:read");
         strings.add("admin:create");
         authorizationInfo.setStringPermissions(strings);
-//        return null;
         return authorizationInfo;
     }
 }

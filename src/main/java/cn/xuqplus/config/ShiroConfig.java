@@ -29,9 +29,10 @@ public class ShiroConfig {
          */
         Map definitions = new HashMap();
         //definitions.put("/", "rest[admin]");
+        definitions.put("/api/login", "anon");
+        definitions.put("/api/anon", "anon");
         definitions.put("/", "perms[admin:create]");
         definitions.put("/**", "authc");
-        definitions.put("/api/login", "anon");
         factoryBean.setFilterChainDefinitionMap(definitions);
         /**
          * 安全管理器
