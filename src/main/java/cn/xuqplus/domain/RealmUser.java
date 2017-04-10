@@ -1,4 +1,4 @@
-package cn.xuqplus.bean;
+package cn.xuqplus.domain;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
 package cn.xuqplus.config;
 
-import cn.xuqplus.bean.User;
+import cn.xuqplus.domain.User;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

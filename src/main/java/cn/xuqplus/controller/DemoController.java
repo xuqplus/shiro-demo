@@ -1,10 +1,9 @@
 package cn.xuqplus.controller;
 
-import cn.xuqplus.bean.User;
+import cn.xuqplus.domain.User;
 import cn.xuqplus.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;

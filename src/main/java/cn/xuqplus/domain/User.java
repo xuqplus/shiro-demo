@@ -1,4 +1,4 @@
-package cn.xuqplus.bean;
+package cn.xuqplus.domain;
 
 /**
  * Created by Administrator on 2017-04-07.
@@ -7,6 +7,15 @@ public class User {
     private Long id;
     private String name;
     private String pwd;
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", pwd='" + pwd + '\'' +
+                '}';
+    }
 
     public User(Long id, String name, String pwd) {
         this.id = id;
